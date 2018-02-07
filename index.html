@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from ss16trendbook.minicool.net/index.arribabajo.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 04 Feb 2018 11:57:46 GMT -->
+<head>
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=1024">
+
+	<title>Minicool</title>
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,300' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
+	<link href="css/fixed-positioning.css" rel="stylesheet" type="text/css" />
+	<link href="css/main.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" type="text/css" href="css/new.css">
+	<link href="css/estilos.css" rel="stylesheet" type="text/css" />
+	<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+	<script src="ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+	<script src="www.newbranding.es/minicool/js/scroll-startstop.events.jquery.html" type="text/javascript"></script>
+    <script src="js/main.js"></script>
+    <script type="text/javascript" src="js/TweenMax.min.js"></script>
+    <script type="text/javascript" src="js/EasePack.min.js"></script>
+</head>
+
+<body>
+	<div id="bg1" data-0="background-position:0px 0px;" data-end="background-position:-500px -10000px;"></div>
+	<div id="bg2" 
+      data-0="background-color: rgb(211, 211, 211);;" 
+      data-6500="background-color: rgb(234, 244, 243);"
+      data-end="background-color: rgb(255, 255, 255);" 
+      ></div>
+	<div id="bg3" data-0="background-position:0px 0px;" data-end="background-position:-500px -6000px;"></div>
+	<div id="wrapper" data-0="top: 0px;">
+		<div class="nave" 
+			data-0="left[swing]: 420px; width: 200px; top: 150px; transform[swing]: rotate(0deg)"
+			data-750="left[swing]: 700px; width: 270px; top: 1050px; transform[swing]: rotate(-10deg)"
+			data-1550="left[swing]: 100px; top: 1850px;  transform[swing]: rotate(10deg)"
+			data-2300="left[swing]: 700px; top: 2600px;  transform[swing]: rotate(-10deg)"
+			data-3060="left[swing]: 100px; top: 3360px;  transform[swing]: rotate(10deg)"
+			data-3800="left[swing]: 700px; top: 4100px;  transform[swing]: rotate(-10deg)"
+			data-4550="left[swing]: 100px; top: 4850px;  transform[swing]: rotate(10deg)"
+			data-5250="left[swing]: 350px; top: 5550px;  transform[swing]: rotate(0deg)"
+			data-6000="left[swing]: 200px; top: 6300px;  transform[swing]: rotate(0deg)"
+			data-6750="left[swing]: 200px; top: 7050px;  transform[swing]: rotate(5deg)"
+			>
+			<img src="png/nave_abiertos.png" class="abiertosderecha"/>
+			<img src="png/nave_abiertos2.png" class="abiertosizquierda"/>
+			<img src="png/nave_space.png" class="propultierra"/>
+			<img src="png/nave_fuego_abiertos.png" class="fuegoabiertos"/>
+			<img src="png/navefuego_cerrados.png" class="fuegocerrados"/>
+			<img src="png/nave_general.png" class="navegeneral"/>
+		</div>
+		
+		<script>
+		var altura = $(window).height();
+		var totalaltura = 8150-altura;
+		$('.nave').attr('data-'+totalaltura, 'left: 340px; top: 7800px; transform[swing]: rotate(0deg)');
+		$('#wrapper').attr('data-'+totalaltura, 'top:-'+totalaltura+';');
+		
+
+		function supernave (objeto, coorini, coorfin){
+			$('.nave .'+objeto).attr('data-'+(coorini+20), 'opacity: 0;');
+			$('.nave .'+objeto).attr('data-'+coorini, 'opacity: 1;');
+			$('.nave .'+objeto).attr('data-'+coorfin, 'opacity: 1;');
+			$('.nave .'+objeto).attr('data-'+(coorfin-20), 'opacity: 0;');
+		}
+		supernave('abiertosderecha', 7000, 6800);
+		supernave('abiertosizquierda', 6780, 6550);
+		supernave('abiertosderecha', 6280, 6040);
+		supernave('abiertosizquierda', 6020, 5830);
+		supernave('fuegoabiertos', 5245, 4750);
+		supernave('abiertosderecha', 4730, 4540);
+		supernave('fuegoabiertos', 4520, 4000);
+		supernave('abiertosizquierda', 3980, 3680);
+		supernave('fuegoabiertos', 3660, 3220);
+		supernave('abiertosderecha', 3200, 2950);
+		supernave('fuegoabiertos', 2930, 2500);
+		supernave('abiertosizquierda', 2480, 2200);
+		supernave('fuegoabiertos', 2180, 1650);
+		supernave('abiertosderecha', 1630, 1430);
+		supernave('fuegoabiertos', 1410, 980);
+		supernave('abiertosizquierda', 960, 700);
+		supernave('fuegoabiertos', 680, 0);
+		supernave('fuegocerrados', 100, 0);
+
+		$('.nave .propultierra').attr('data-5245', 'opacity: 1;');
+		$('.nave .propultierra').attr('data-5225', 'opacity: 0;');
+		$('.nave .propultierra').attr('data-0', 'opacity: 0;');
+
+
+		</script>
+
+		<!-- <div class="logo"><a href="#pagina11"><img src="png/logo.png"></a></div> -->
+		<div id="pagina1" class="pagina">
+			<div class="saturnosup"><img src="png/adsophos.png"/></div>
+			<div class="astronauta"><img src="png/astronauta.png"/></div>
+			<!-- <div class="libro"><img src="png/libro.png"/></div> -->
+			<div class="navetop"><img src="png/navetop.png"/></div>
+			<!-- <div class="pajarotop"><img src="png/pajarotop.png"/></div> -->
+			<!-- <div class="ratontop"><img src="png/ratontop.png"/></div> -->
+			<div class="navepeque"><img src="png/navepeque.png"/></div>
+			<div class="raton_volador"><img src="png/raton_volador.png"/></div>
+			<!-- <div class="mensaje">El viaje no termina aquí. Más bien acaba de empezar... <span>¡Quiero mi TrendBook!</span></div> -->
+		</div>
+		<div id="pagina2" class="pagina">
+			<div class="satelite"><img src="png/satelite.png"/></div>
+			<div class="senal2"><img src="png/senal2.png"/><span>PLANETA ECO</span></div>
+			<div class="nave_esp"><img src="png/nave_esp.png" class="esp11"/>
+			<img src="png/nave_esp2.png" class="esp22 "/>
+			</div>
+			<div class="mensaje" onclick="location.href = 'about.html'"><a href="about.html">About</a></div>
+		</div>
+		<div id="pagina3" class="pagina">
+			<div class="satelite"><img src="png/satelite.png"/></div>
+			<div class="senal"><img src="png/senal.png"/><span>PLANETA APLICATION</span></div>
+			<div class="pajaro1">
+				<img src="png/pajaro1.png" class="pajaro11"/>
+				<img src="png/pajaro2.png" class="pajaro22"/>
+			</div>
+			<div class="mensaje derecha" onclick="location.href ='events.html'"><a href="events.html">Events</a>
+			</div>
+		</div>
+		<div id="pagina4" class="pagina">
+			<div class="cohetewhite" data-2850="right[swing]: 300px; top[swing]: 200px;" data-1350="right[swing]: -100px; top[swing]: -150px;"><img src="png/cohetewhite.png"/></div>
+			<div class="senal2"><img src="png/senal2.png"/><span>PLANETA DISEÑO</span></div>
+			<div class="jupiter1"><img src="png/jupiter1.png"/></div>
+			<div class="raton_volador"><img src="png/raton_volador.png"/></div>
+			<div class="mensaje" onclick="location.href='photos.html'"><a href="photos.html">Gallery</a>  
+			</div>
+		</div>
+		<div id="pagina5" class="pagina">
+			<div class="satelite2"><img src="png/satelite2.png"/></div>
+			<div class="senal"><img src="png/senal.png"/><span>PLANETA COLOR</span></div>
+			<div class="gato1"><img src="png/gato1.png"/></div>
+			<div class="mensaje derecha" onclick="location.href='testimonials.html'"><a href="testimonials.html">Testimonial</a>
+			</div>
+		</div>
+		<div id="pagina6" class="pagina">
+			<div class="navewhite" data-top-bottom="right[swing]: -100px; top[swing]: 200px;" data-2500="right[swing]: 300px; top[swing]: -150px;"><img src="png/navewhite.png"/></div>
+			<div class="senal2"><img src="png/senal2.png"/><span>PLANETA TENDENCIAS</span></div>
+			<div class="planeta1"><img src="png/planeta1.png"/></div>
+			<div class="astronauta"><img src="png/astronauta.png"/></div>
+			<div class="mensaje" onclick="location.href='about.html#contact'"><a href="about.html#contact">Contact</a>
+			</div>
+		</div>
+		<div id="pagina7" class="pagina">
+			<div class="satelite"><img src="png/satelite.png"/></div>
+			<div class="senal"><img src="png/senal.png"/><span>PLANETA COLOR</span></div>
+			<div class="raton11"><img src="png/raton1.png" class="raton1"/>
+			<img src="png/raton2.png" class="raton2"/></div>
+			<div class="mensaje derecha"><a href="mjcet.html">MJCET</a>
+			</div>
+		</div>
+		<div id="pagina8" class="pagina">
+			<!-- <div class="mensaje derecha">
+			3 - 2 - 1...<br />
+			<span>¡Allá vamos!</span>
+
+			</div>
+			<div class="estrellasfondo"></div> -->
+		</div>
+		<div id="pagina9" class="pagina">
+			<div class="luna_duerme abiertocerrado">
+				<img src="png/luna_duerme.png" class="cerrados"/>
+				<img src="png/luna_despierta.png" class="abiertos"/>
+			</div>
+			<div class="et1" data-5000="right: 340px;" data-6200="right: 20px;" data-6000="right: 20px;" data-6800='right: -100px;'>
+				<img src="png/bicisinrueda.png" class="et11" />
+				<img src="png/rueda.png" class="rueda1"/>
+				<img src="png/rueda.png" class="rueda2"/>
+			</div>
+			<div class="mensaj derecha">
+			</div>
+			<div class="estrellasfondo"></div>
+			<div class="mensaj">
+				
+			</div>
+		</div>
+
+
+		<div class="copyright">
+
+			<div class="copyright-title">
+				<h1>Designed By</h1>
+			</div>
+			
+			<div class="copyright-cover">
+				<div class="copyright-image">
+					<img src="png/astronauta.png" class="image0">
+					<div class="copyright-name">Aamir</div>
+				</div>
+			</div>
+			<div class="copyright-cover">
+				<div class="copyright-image">
+					<img src="png/astronauta.png" class="image1">
+					<div class="copyright-name">Arish</div>
+				</div>
+			</div>
+			<div class="copyright-cover">
+				<div class="copyright-image">
+					<img src="png/astronauta.png" class="image2">
+					<div class="copyright-name">Zohaib</div>
+				</div>
+			</div>
+
+		</div>
+
+
+		<div id="pagina10" class="pagina">
+			<!-- <div class="sol abiertocerrado">
+				<img src="png/rayos_sol.png" class="rayos"/>
+				<img src="png/sol_duerme.png" class="carasol cerrados"/>
+				<img src="png/sol_sonrie.png" class="carasol abiertos"/>
+			</div>
+			<div class="nube_cerrados abiertocerrado">
+				<img src="png/nube_abiertos.png" class="abiertos"/>
+				<img src="png/nube_cerrados.png" class="cerrados"/>
+			</div>
+			<div class="nubefondo" data-></div>
+			<div class="mensaje derecha">Esto no es una web
+			</div>
+			<div class="mensaje" >Es un viaje alucinante a través de la <span>Galaxia Minicool...</span>
+			</div> -->
+		</div>
+		<div id="pagina11" class="pagina">
+			<div class="nubebot"><img src="png/nubebot.png"/></div>
+			<div class="mouse1" data-center-top="opacity: 0" data-center="opacity: 1;"><img src="png/mouse1.png"/></div>
+			<div class="mouse2" data-center-top="opacity: 0" data-center="opacity: 1;"><img src="png/mouse2.png"/></div>
+		</div>
+		<div class="suelo">
+			<div class="wrapper">
+				<div class="arboles_derecha"><img src="png/arboles_derecha.png"/></div>
+				<div class="arboles_izquierda"><img src="png/arboles_izquierda.png"/></div>
+			</div>
+			<div class="imagensuelo"></div>
+		</div>
+	</div>
+		
+
+
+	<script>
+		$('.mensaje').attr('data-top', 'opacity: 0;');
+		$('.mensaje').attr('data-100-top', 'opacity: 1;');
+		$('.mensaje').attr('data--100-bottom', 'opacity: 1;');
+		$('.mensaje').attr('data-bottom', 'opacity: 0;');
+		$('.abiertocerrado .abiertos').attr('data-90-top', 'opacity: 0;');
+		$('.abiertocerrado .abiertos').attr('data-100-top', 'opacity: 1;');
+		$('.abiertocerrado .abiertos').attr('data--100-bottom', 'opacity: 1;');
+		$('.abiertocerrado .abiertos').attr('data--90-bottom', 'opacity: 0;');
+		$('.abiertocerrado .cerrados').attr('data-90-top', 'opacity: 1;');
+		$('.abiertocerrado .cerrados').attr('data-100-top', 'opacity: 0;');
+		$('.abiertocerrado .cerrados').attr('data--100-bottom', 'opacity: 0;');
+		$('.abiertocerrado .cerrados').attr('data--90-bottom', 'opacity: 1;');
+	</script>
+	<script type="text/javascript" src="js/skrollr.js"></script>
+
+	<!--[if lt IE 9]>
+	<script type="text/javascript" src="../skrollr-ie/dist/skrollr.ie.min.js"></script>
+	<![endif]-->
+
+	<script type="text/javascript">
+	var s = skrollr.init({
+		edgeStrategy: 'set',
+		easing: {
+			WTF: Math.random,
+			inverted: function(p) {
+				return 1-p;
+			}
+		}
+	});
+	</script>
+</body>
+
+
+<!-- Mirrored from ss16trendbook.minicool.net/index.arribabajo.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 04 Feb 2018 11:58:29 GMT -->
+</html>
