@@ -85,16 +85,24 @@
 }
 .copyright-title{
   text-align: center;
-  margin-bottom: 50px;
-  padding: 50px;
-  color: #313131;
+  margin-bottom: 150px;
+  padding: 20px;
+  width: 250px;
+  position: relative;
+  left: 380px;
+  color: white;
+  background-color: transparent;
+  -webkit-box-shadow: 1px 1px 4px white;
+  box-shadow: 1px 1px 4px white;
+  border-radius: 10px;
+  
 }
 .copyright-title h1{
   font-size: 40px;
   padding: 20px 20px;
   border-radius: 5px;
   display: inline-block;
-  background-color: rgba(255,255,255,0.8);
+ 
 }
 .copyright .copyright-cover{
   text-align: center;
@@ -107,7 +115,7 @@
   margin-top: 5px;
   font-weight: bold;
   margin-left: 120px;
-  color: #313131;
+  color: white !important;
   border-radius: 15px;
   background-color: #fff;
   padding: 10px 50px;
@@ -115,17 +123,57 @@
   position: absolute;
   margin-top: 160px;
 }
-.image0{
+.aamir-container{
+  left: 0px;
   position: absolute;
+}
+
+.image0{
+  width:100px !important;
+  /* position: absolute;
+  left: 100px; */
   animation: float_zero 5s infinite ease;
 }
-.image1{
+
+.aamir-name{
+  color: white;
   position: absolute;
-  animation: float_zero 2s infinite ease reverse;
+  left: 0px;
+  top: 110px;
+  font-size: 28px;
+}
+.aarish-container{
+  left: 450px;
+  position: absolute;
+}
+.image1{
+  width:100px !important;
+  /* position: absolute;
+  left: 100px; */
+  animation: float_zero 5s infinite ease;
+}
+.aarish-name{
+  color: white;
+  position: absolute;
+  top: 110px;
+  left: 0px;
+  font-size: 28px;
+}
+.zohaib-container{
+  position: absolute;
+  left: 900px
+  
 }
 .image2{
+  width: 100px !important;
+  animation: float_zero 5s infinite ease;
+}
+.zohaib-name{
+  color: white;
   position: absolute;
-  animation: float_zero 4s infinite ease;
+  top:110px;
+  left: 0px;
+  font-size: 28px;
 }
 @keyframes float_zero{
   0% { margin-top: 0px; }

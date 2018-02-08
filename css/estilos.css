@@ -7,9 +7,79 @@ html {
 }
 
 body {
-    margin: 0
+    margin: 0;
+    font-family: 'Quicksand',sans-serif;
+}
+@keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-webkit-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-moz-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-ms-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
 }
 
+@keyframes move-clouds-back {
+    from {background-position:0 0;}
+    to {background-position:10000px 0;}
+}
+@-webkit-keyframes move-clouds-back {
+    from {background-position:0 0;}
+    to {background-position:10000px 0;}
+}
+@-moz-keyframes move-clouds-back {
+    from {background-position:0 0;}
+    to {background-position:10000px 0;}
+}
+@-ms-keyframes move-clouds-back {
+    from {background-position: 0;}
+    to {background-position:10000px 0;}
+}
+
+.stars, .twinkling, .clouds {
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  width:100%;
+  height:100%;
+  display:block;
+}
+
+.stars {
+  background:#000 url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
+  z-index:0;
+}
+
+.twinkling{
+  background:transparent url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat top center;
+  z-index:1;
+
+  -moz-animation:move-twink-back 200s linear infinite;
+  -ms-animation:move-twink-back 200s linear infinite;
+  -o-animation:move-twink-back 200s linear infinite;
+  -webkit-animation:move-twink-back 200s linear infinite;
+  animation:move-twink-back 200s linear infinite;
+}
+.about-message{
+    width:250px !important;
+    color:white !important;
+    -webkit-border-radius: 30px 30px 30px 0 !important;
+    border-radius: 30px 30px 30px 0;
+
+}
+.about-message a{
+    color:white !important
+}
 article,
 aside,
 details,
@@ -325,19 +395,25 @@ a {
 #wrapper .pagina .mensajetop {
     padding: 30px;
     font-size: 15px;
-    background-color: #fff;
-    -webkit-border-radius: 30px 30px 30px 0;
+    /* background-color: #fff; */
+    -webkit-border-radius: 30px 30px 30px 0 ;
     border-radius: 30px 30px 30px 0;
+    border-radius: 20px;
     position: absolute;
     width: 300px;
-    -webkit-box-shadow: 4px 4px 10px #c4c4c4;
-    box-shadow: 4px 4px 10px #c4c4c4;
-    font-family: 'Roboto Slab', serif;
+    color: white;
+    -webkit-box-shadow: 1px 1px 4px #c4c4c4;
+     box-shadow: 1px 1px 4px #c4c4c4;
+     /* font-family: 'Roboto Slab', serif; */
     font-weight: 300;
-    color: #666;
+    
     opacity: 0;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
     filter: alpha(opacity=0);
+}
+
+.mensaje a{
+    color: white !important;
 }
 
 #wrapper .pagina .mensaje span,
@@ -691,7 +767,7 @@ a {
 }
 
 #wrapper #pagina4 .jupiter1 {
-    bottom: 20px;
+    bottom: 300px;
     left: 20px;
     width: 256px
 }
@@ -704,7 +780,7 @@ a {
 
 #wrapper #pagina5 .satelite2 {
     width: 158px;
-    right: 40px;
+    left: 0px;
     top: 50px
 }
 
@@ -725,7 +801,7 @@ a {
 
 #wrapper #pagina5 .gato1 {
     right: 30px;
-    bottom: 100px;
+    bottom: 180px;
     height: 218px;
     width: 159px;
 }
@@ -772,7 +848,7 @@ a {
 }
 
 #wrapper #pagina6 .planeta1 {
-    bottom: 20px;
+    bottom: 260px;
     left: 20px;
     width: 230px
 }

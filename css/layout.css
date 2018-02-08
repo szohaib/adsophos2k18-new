@@ -25,6 +25,7 @@
 /* ------------------------------------------------------------------ */
 /* a. General and Common Styles
 /* ------------------------------------------------------------------ */
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
 
 body { background:url(../img/estrellas.png) repeat 0 0;
         background-color: black !important;
@@ -344,10 +345,14 @@ ul.features li:nth-child(even) { }
    float: left;   
 }
 #features h3 {
-   font: 16px/24px 'montserrat-bold', sans-serif;
+   font: 24px 'Quicksand', sans-serif;
    text-transform: uppercase;
    letter-spacing: 1px;
-   color: #222;
+   color: #333;
+   padding:10px;
+   background-color: rgba(255,255,255, 0.8);
+   border-radius: 8px;
+
 }
 .fluid-video-wrapper { margin-top: 18px; }
 
