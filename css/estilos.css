@@ -1,5 +1,9 @@
 /* normalize.css v3.0.0 | MIT License | git.io/normalize */
-
+@media(min-width:300px) and (max-width:1024px){
+    body{
+        height: 100%;
+    }
+}
 html {
     font-family: sans-serif;
     -ms-text-size-adjust: 100%;
