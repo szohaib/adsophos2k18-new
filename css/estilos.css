@@ -1,8 +1,15 @@
 /* normalize.css v3.0.0 | MIT License | git.io/normalize */
 @media(min-width:300px) and (max-width:1024px){
-    body{
-        height: 100%;
-    }
+   #pagina11{
+       display: none !important;
+   }
+   .imagensuelo{
+       display: none !important;
+
+   }
+   .suelo{
+       display: none !important;
+   }
 }
 html {
     font-family: sans-serif;
@@ -12,7 +19,7 @@ html {
 
 body {
     margin: 0;
-    font-family: 'Quicksand',sans-serif;
+    font-family: 'Amatic SC', cursive;
 }
 @keyframes move-twink-back {
     from {background-position:0 0;}
@@ -81,8 +88,29 @@ body {
     border-radius: 30px 30px 30px 0;
 
 }
+.gallery-message{
+    width:250px !important;
+    color:white !important;
+    -webkit-border-radius: 30px 30px 30px 0 !important;
+    border-radius: 30px 30px 30px 0;
+}
+.contact-message{
+    width:250px !important;
+    color:white !important;
+    -webkit-border-radius: 30px 30px 30px 0 !important;
+    border-radius: 30px 30px 30px 0;
+}
+.events-message{
+    width:250px !important; 
+    left:580px !important;
+    top:150px !important
+}
 .about-message a{
-    color:white !important
+    color:white !important;
+    letter-spacing: 10px;
+    font-weight: 500 !important;
+    font-family: 'Amatic SC', cursive !important;
+    
 }
 article,
 aside,
@@ -409,7 +437,9 @@ a {
     -webkit-box-shadow: 1px 1px 4px #c4c4c4;
      box-shadow: 1px 1px 4px #c4c4c4;
      /* font-family: 'Roboto Slab', serif; */
-    font-weight: 300;
+    letter-spacing: 10px;
+    font-weight: 500 !important;
+    font-family: 'Amatic SC', cursive !important;
     
     opacity: 0;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
@@ -418,6 +448,9 @@ a {
 
 .mensaje a{
     color: white !important;
+    letter-spacing: 10px;
+    font-weight: 500 !important;
+    font-family: 'Amatic SC', cursive !important;
 }
 
 #wrapper .pagina .mensaje span,
@@ -670,7 +703,7 @@ a {
 }
 
 #wrapper #pagina2 .nave_esp .esp11 {
-    top: 0;
+    top: -50px;
     left: 0;
     position: absolute
 }

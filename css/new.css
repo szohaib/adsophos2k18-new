@@ -93,6 +93,8 @@
   -webkit-box-shadow: 1px 1px 4px white;
   box-shadow: 1px 1px 4px white;
   border-radius: 10px;
+  font-weight: lighter;
+  letter-spacing: 10px;
   
 }
 .copyright-title h1{
@@ -136,9 +138,11 @@
 .aamir-name{
   color: white;
   position: absolute;
-  left: 0px;
+  left: -10px;
   top: 110px;
   font-size: 28px;
+  letter-spacing: 8px;
+  font-weight: lighter;
 }
 .aarish-container{
   left: 450px;
@@ -156,6 +160,8 @@
   top: 110px;
   left: 0px;
   font-size: 28px;
+  letter-spacing: 8px;
+  font-weight: lighter;
 }
 .zohaib-container{
   position: absolute;
@@ -170,8 +176,10 @@
   color: white;
   position: absolute;
   top:110px;
-  left: 0px;
+  left: -10px;
   font-size: 28px;
+  letter-spacing: 8px;
+  font-weight: lighter;
 }
 @keyframes float_zero{
   0% { margin-top: 0px; }
